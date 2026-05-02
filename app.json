@@ -1,0 +1,71 @@
+{
+  "expo": {
+    "name": "Vasu AI",
+    "slug": "vasu-ai-assistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a0a"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vasu.ai",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Vasu needs microphone access for voice commands",
+        "NSSpeechRecognitionUsageDescription": "Vasu needs speech recognition to understand your commands",
+        "NSContactsUsageDescription": "Vasu needs contacts access to make calls and send messages",
+        "NSCameraUsageDescription": "Vasu needs camera access for QR scanning and visual tasks"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0a0a"
+      },
+      "package": "com.vasu.ai",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.CHANGE_WIFI_STATE",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.CAMERA",
+        "android.permission.READ_CONTACTS",
+        "android.permission.CALL_PHONE",
+        "android.permission.SEND_SMS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.FLASHLIGHT",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.FOREGROUND_SERVICE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-av",
+      "expo-speech",
+      "expo-keep-awake",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#00ff88"
+        }
+      ]
+    ]
+  }
+}
